@@ -11,7 +11,8 @@ public class Array1D {
             numbers[i]=tim;
         }
         printArray();
-        System.out.println(sumArray());
+        System.out.println("Sum of Array: "+ sumArray());
+        System.out.println("Average of Array: "+ aveArray());
     }
     public void printArray(){
         for(int w=0;w< numbers.length; w++){
@@ -30,6 +31,11 @@ public class Array1D {
 
     }
     public double aveArray(){
+        int sum = 0;
+        for(int i =0; i< numbers.length; i++){
+            sum += numbers[i];
+        }
+        return (double) sum / numbers.length;
 
     }
 
