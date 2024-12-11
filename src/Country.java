@@ -21,4 +21,10 @@ public class Country {
             System.out.println(name);
 
     }
+    public int getPop(){
+            return pop;
+    }
+    public void setPop(int population){
+            pop = population;
+    }
 }
