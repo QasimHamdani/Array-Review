@@ -15,6 +15,7 @@ public class Arrays2D {
         }
         printArray();
         System.out.println(Sum2D());
+        System.out.println(ave2D());
     }
 
     public void printArray() {
@@ -34,5 +35,14 @@ public class Arrays2D {
             }
         }
         return sum;
+    }
+    public double ave2D() {
+        int sum = 0;
+        for (int y = 0; y < nums.length; y++) {
+            for (int x = 0; x < nums[y].length; x++) {
+                sum += nums[y][x];
+            }
+        }
+        return (double) sum / nums.length;
     }
 }

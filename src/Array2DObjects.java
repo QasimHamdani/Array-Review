@@ -15,6 +15,7 @@ public class Array2DObjects {
         }
         printArray();
         System.out.println(sum2d());
+        System.out.println(ave2DObj());
     }
     public void printArray(){
         for(int r = 0; r < countries.length; r++) {
@@ -33,6 +34,15 @@ public class Array2DObjects {
             }
         }
         return sum;
+    }
+    public double ave2DObj() {
+        int sum = 0;
+        for (int y = 0; y < countries.length; y++) {
+            for (int x = 0; x < countries[y].length; x++) {
+                sum += countries[y][x].getPop();
+            }
+        }
+        return (double) sum / countries.length;
     }
 }
 
